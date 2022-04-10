@@ -1,5 +1,6 @@
 #Q4
 #Solve i
+samplespace=rolldie(2)
 s=rolldie(2,makespace = TRUE);
 
 #solve ii

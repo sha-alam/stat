@@ -1,10 +1,10 @@
-
 install.packages("prob")
+library("prob")
 #Class work
 #Question 3
+
 #Solve i
 s=tosscoin(3)
-s
 
 #Solve ii
 A=subset(s,toss1=='H')

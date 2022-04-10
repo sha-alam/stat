@@ -15,5 +15,5 @@ dbinom(2,5,0.45)
 dbinom(2,5,0.45)+dbinom(3,5,0.45)
 
 #vi
-qx<-cumsum(px)
-plot(x,qx,type="s",xlab="Outcome",ylab="Probability",col="red")
+qx=cumsum(px)
+plot(x,qx,type="s",xlab="Outcome",ylab="Probability")

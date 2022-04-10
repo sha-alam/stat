@@ -31,17 +31,24 @@ summary(maturity)
 
 #iv
 
-meandev.mean=sum(abs(maturity-mean(maturity)))/length(maturity)
-meeandev.median=sum(abs(maturity-median(maturity)))/length(maturity)
+md.mean=sum(abs(maturity-mean(maturity)))/length(maturity)
+md.median=sum(abs(maturity-median(maturity)))/length(maturity)
 
 modeMeasure=which.max(table(maturity))
 #for -70
-meandev.mode=sum(abs(maturity-70))/length(maturity)
+md.mode=sum(abs(maturity-70))/length(maturity)
 #for -20
-meandev.mode2=sum(abs(maturity-20))/length(maturity)
+md.mode2=sum(abs(maturity-20))/length(maturity)
 
 
 
 #v
 cv=(sd(maturity)/mean(maturity))*100
+meu2=sum((maturity-mean(maturity))^2)/length(maturity)
+meu3=sum((maturity-mean(maturity))^3)/length(maturity)
+meu4=sum((maturity-mean(maturity))^4)/length(maturity)
+sk=(((meu3)^2)/((meu2)^3))
 
+skewness(maturity)
+ku=(meu4)/(meu2)^2
+kurtosis(maturity)
